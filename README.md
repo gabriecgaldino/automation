@@ -14,7 +14,7 @@ Este projeto é uma automação que utiliza Python e Selenium para realizar o up
 2. **Pacotes Necessários**:
    - `selenium`
    - `python-dotenv`
-3. **WebDriver**: Baixe e configure o ChromeDriver compatível com sua versão do Google Chrome. Disponível em: [ChromeDriver](https://sites.google.com/chromium.org/driver/).
+3. **WebDriver**: Baixe e configure o ChromeDriver compatível com sua versão do Google Chrome. Disponível em: [ChromeDriver]([https://sites.google.com/chromium.org/driver/](https://developer.chrome.com/docs/chromedriver/downloads)).
 
 ## **Configuração**
 ### 1. Clone este repositório
