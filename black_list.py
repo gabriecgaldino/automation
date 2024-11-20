@@ -3,6 +3,7 @@ import csv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from dotenv import load_dotenv
 
@@ -41,10 +42,15 @@ else:
     except Exception as e:
         print(f'Ocorreu um erro: {e}')
 
-options = webdriver.ChromeOptions()
-driver = webdriver.Chrome(options=options)
-wait = WebDriverWait(driver, 10)
 
+option = Options()
+option.add_argument("--headless")
+option.add_argument("--disable-gpu")
+option.add_argument("--no-sandbox")
+option.add_argument("--disable-dev-shm-usage")
+
+driver = webdriver.Chrome(options=option)
+wait = WebDriverWait(driver, 10)
 try:
     url = os.getenv("TRADEAPP_URL")
     driver.get(url)
