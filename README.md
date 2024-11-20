@@ -1,9 +1,6 @@
-```markdown
 # Automação de Upload de Blacklist/Whitelist
 
 Este projeto é uma automação que utiliza Python e Selenium para realizar o upload de um arquivo CSV no sistema de importação da plataforma [SIV]. O script faz alterações nos CPFs do arquivo e realiza o upload de acordo com as configurações definidas.
-
----
 
 ## **Funcionalidades**
 - Modificar os CPFs no arquivo CSV antes do upload.
@@ -12,16 +9,12 @@ Este projeto é uma automação que utiliza Python e Selenium para realizar o up
 - Enviar o arquivo atualizado para a plataforma.
 - Confirmar a importação com um clique automatizado.
 
----
-
 ## **Pré-requisitos**
 1. **Python**: Certifique-se de ter o Python 3.8 ou superior instalado.
 2. **Pacotes Necessários**:
    - `selenium`
    - `python-dotenv`
 3. **WebDriver**: Baixe e configure o ChromeDriver compatível com sua versão do Google Chrome. Disponível em: [ChromeDriver](https://sites.google.com/chromium.org/driver/).
-
----
 
 ## **Configuração**
 ### 1. Clone este repositório
